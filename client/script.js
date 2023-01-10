@@ -1,19 +1,25 @@
-$("#generate").click(function(){
-	var lorem = $("#lorem");
-	lorem.html("");
-	var quantity = $("#quantity")[0].valueAsNumber;
-	var data = ["Lorem ipsum", "quia dolor sit", "amet", "consectetur"];
-	for(var i = 0; i < quantity; i++){
-		lorem.append("<p>"+data[i]+"</p>");
-	}
-})
+document.getElementById("navList").addEventListener("click", (e)=> changePage(e));
 
-$("#copy").click(function() {
-	var range = document.createRange();
-	range.selectNode($("#lorem")[0]);
-	window.getSelection().removeAllRanges();
-	window.getSelection().addRange(range);
-	document.execCommand("copy");
-	window.getSelection().removeAllRanges();
-	}
-)
+function changePage(event){
+let url = event.target.id;
+let element2Change = document.getElementById('content')
+
+switch (url) {
+	case 'S1': element2Change.innerHTML = document.getElementById('section1').innerHTML;
+		break;
+	case 'S2': element2Change.innerHTML = document.getElementById('section2').innerHTML;
+		break;
+	case 'S3': element2Change.innerHTML = document.getElementById('section3').innerHTML;
+		break;
+	case 'S4': element2Change.innerHTML = document.getElementById('section4').innerHTML;
+		break;
+	case 'S5': element2Change.innerHTML = document.getElementById('section5').innerHTML;
+		break;
+	case 'S6': element2Change.innerHTML = document.getElementById('section6').innerHTML;
+		break;
+	case 'S7': element2Change.innerHTML = document.getElementById('section7').innerHTML;
+		break;
+	default:   element2Change.innerHTML = document.getElementById('homeTemplate').innerHTML;
+		break;
+}
+}
