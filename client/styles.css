@@ -25,3 +25,27 @@ li a:hover {
 #hometitle {
 text-align: center;
 }
+
+.active {
+	background-color: rgb(38, 136, 248);
+  }
+
+.flexContainer {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	border-style: solid;
+	border-color:rgb(17, 120, 255);
+}
+.flexBox {
+border-style: solid;
+flex-grow: 1;
+border-color: rgb(27, 253, 38);
+}
+
+.h3Div {
+	flex-basis: 100%;
+	border-style: solid;
+	border-color: red;
+	width: 100%;
+}
