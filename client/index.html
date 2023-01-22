@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <head>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+  <title>MASTER JS WEBSITE</title>
 </head>
 <html>
 <body>
   <div>
   <ul id="navList">
-    <li><a id='home' class="active" href="#home">Home</a></li>
-    <li><a id='S1' href="#S1">Variables, Types, and Collections: 23%</a></li>
-    <li><a id='S2' href="#S2">Given a business requirement, utilize strings, numbers, and dates effectively.</a></li>
-    <li><a id='S3' href="#S3">Browser and Events: 17%</a></li>
-    <li><a id='S4' href="#S4">Debugging and Error Handling: 7%</a></li>
-    <li><a id='S5' href="#S5">Asynchronous Programming: 13%</a></li>
-    <li><a id='S6' href="#S6">Server Side JavaScript: 8%</a></li>
-    <li><a id='S7' href="#S7">Testing: 7%</a></li>
+    <li><a id='home' href="#home">Home</a></li>
+    <li><a id='S1'   href="#S1">Variables, Types, and Collections: 23%</a></li>
+    <li><a id='S2'   href="#S2">Given a business requirement, utilize strings, numbers, and dates effectively.</a></li>
+    <li><a id='S3'   href="#S3">Browser and Events: 17%</a></li>
+    <li><a id='S4'   href="#S4">Debugging and Error Handling: 7%</a></li>
+    <li><a id='S5'   href="#S5">Asynchronous Programming: 13%</a></li>
+    <li><a id='S6'   href="#S6">Server Side JavaScript: 8%</a></li>
+    <li><a id='S7'   href="#S7">Testing: 7%</a></li>
   </ul>
+<!-- MAIN BODY THAT WILL BE REPLACED BY TEMPLATES-->
   <div id="content">
-    <h1> WELCOME TO MY JAVASCRIPT STUDY HOMEPAGE!</h1>
+  
   </div>
+<!-- MAIN BODY THAT WILL BE REPLACED BY TEMPLATES-->
+
 <!-- HOME template -->
 <template id="homeTemplate">
   <h1> WELCOME TO MY JAVASCRIPT STUDY HOMEPAGE!</h1>
 </template>
   <!-- Section 1 template -->
 <template id="section1">
-  <h1> THIS IS SECTION 1!</h1>
+  <div class="flexBox">
+  <h1>This is section 1 - Variables, Types, and Collections: 23%</h1>
+</div>
+<div class="flexContainer">
+<div class="h3Div">
+  <h3>Variables and Scope</h3>
+</div>
+<div class="flexBox"><p>Const: Must be initializd with a value and has a block scope</p></div>
+<div class="flexBox"><p>Let: can be initializd with a value and has a block scope</p></div>
+<div class="flexBox"><p>Var: can be initializd with a value and DOES NOT have a block </p></div>
+</div>
+<div class="flexContainer">
+  <div class="h3Div">
+    <h3>Template Literals</h3>
+  </div>
+  <div class="flexBox">
+    <p>A template literal has 2 back ticks and can have a variable inside such as ${Phone}</p>
+    <p> enter a phrase and it will be filled here with a template literal</p>
+    <input type="text" onchange="handleLiteral()" title="input for literal">
+  </div>
 </template>
   <!-- Section 2 template -->
   <template id="section2">

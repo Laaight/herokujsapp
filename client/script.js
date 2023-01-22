@@ -1,9 +1,15 @@
+import { Page1Class } from "./page1";
+
+let element2Change = document.getElementById('content')
+
+window.addEventListener("load", (event) => {
+	element2Change.innerHTML = document.getElementById('homeTemplate').innerHTML;
+  });
+
 document.getElementById("navList").addEventListener("click", (e)=> changePage(e));
 
 function changePage(event){
 let url = event.target.id;
-let element2Change = document.getElementById('content')
-
 switch (url) {
 	case 'S1': element2Change.innerHTML = document.getElementById('section1').innerHTML;
 		break;
